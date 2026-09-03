@@ -77,6 +77,19 @@ and inspect the forward pass with render modes, optional site dots, and PNG expo
 
 The hosted demo is available from the project page: https://luckyiyi.github.io/SAD/
 
+## Reproducing Results
+
+Run the Table 4 Kodak evaluation from the repository root:
+
+```bash
+./reproduce_table4.sh
+```
+
+The script downloads the 24 [Kodak images](https://r0k.us/graphics/kodak/),
+trains them at 16.0 BPP using `training_config.json`, and reports the mean PSNR.
+Inputs, reconstructions, `*_sites.txt` files, and the summary are written to
+`results/reproduction/table4/`.
+
 ## Backends
 
 Each backend has its own README with setup, build, and usage details:
